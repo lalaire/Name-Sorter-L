@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Data Management System</title>
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>People Data Management System</h1>
+    <p class="sub">
+        Total Records:
+        <span class="total" id="totalRecords">0</span>
+        persons
+    </p>
+    <!-- MAIN BUTTONS -->
+    <div class="btns">
+        <button class="btn-prof" onclick="showProfession()">
+            Report by Profession
+        </button>
+        <button class="btn-age" onclick="showAge()">
+            Report by Age Bracket
+        </button>
+        <button class="btn-gender" onclick="showGender()">
+            Report by Gender
+        </button>
+        <button class="btn-search" onclick="showSearchForm()">
+            Search People
+        </button>
+        <button class="btn-prof-search" onclick="showProfessionSearch()">
+            Search Profession
+        </button>
+        <button class="btn-add" onclick="showAddForm()">
+            Add Person
+        </button>
+        <button class="btn-all" onclick="showAll()">
+            Show All Data
+        </button>
+    </div>
+    <!-- OUTPUT AREA -->
+    <div id="output"></div>
+</div>
+<!-- Connect JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
